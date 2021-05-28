@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+
+
+
+
+    <link rel="stylesheet" href="MyCSS.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+
+
+
+
+</script>
+
+</head>
+
+
+<body>
+
+
+<!-- Top Navigation Bar -->
+
+
+<nav>
+
+<div class="topnav">
+
+    <a href="Home.html">Home</a>
+    <a href="About.html">About</a>
+    <a href="Lifestyle.html">Lifestyle</a>
+    <a href="Events.html">Events</a>
+    <a href="Connect With Us.html">Connect With Us</a>
+
+
+    <!--Search Bar -->
+    <input type="text" placeholder="Search.." name="search">
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+</nav>
+
+
+<div class="slideshow">
+
+    <div class="slides">
+
+        <img src="Hut.jpg" alt="Hut"  >
+
+    </div>
+
+    <div class="slides">
+
+        <img src="Northen Lights.jpg" alt="Northen Lights" >
+    </div>
+
+
+    <div class="slides">
+
+        <img src="Reindeer.jpg" alt="Reindeer" >
+
+    </div>
+
+</div>
+    <script>
+        var myIndex = 0;
+        carousel();
+
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("slides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}
+          x[myIndex-1].style.display = "block";
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="footer">
+    <ul class="socials">
+    <li><a href="#Facebook"><img src="Facebook.png" alt="Facebook"></a></li>
+
+    <li><a href="#Instagram"><img src="Instagram.png" alt="Twitter"></a></li>
+
+    <li><a href="#Twitter"><img src="Twitter.png" alt="Twitter"></a></li>
+
+    <li><a href="#YouTube"><img src="YouTube.png" alt="YouTube"></a></li>
+    </ul>
+
+
+</div>
+
+
+</html>
